@@ -8,12 +8,12 @@
 
 /* Shared styles start */
 .btn-primary {
-    padding: 10px 25px;
+    padding: 15px 35px;
     border-radius: 6px;
     background: linear-gradient(0deg, #ff8063 -28.333%, #f46060 95.833%);
     color: white;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     border: none;
     outline: none;
@@ -33,6 +33,8 @@ header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: max-content;
 }
 
 header nav ul {
@@ -65,8 +67,102 @@ header nav .logo {
     header nav {
         flex-direction: column;
     }
+
+    header nav ul li {
+        border: 2px solid #f46060;
+        padding: 5px 8px;
+        margin: 5px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        color: #363958;
+    }
 }
 
 /* Nav section style end here */
+/* Header main section style start */
+.header-main {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
 
+.header-main .header-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-info .info {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.header-info .info .header-title {
+    font-family: Bebas Neue;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+    color: #363958;
+    margin-bottom: 18px;
+}
+
+.header-info .info .header-title .name {
+    color: #ff8367;
+}
+
+.header-info .info .header-description {
+    color: #3e3e3e;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.header-main .header-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-main .header-img .header-image {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    header nav .logo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .header-main {
+        height: max-content;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .header-main .header-info,
+    .header-img {
+        width: 100%;
+    }
+
+    .header-main .header-img {
+        width: 90%;
+    }
+
+    .header-info .info .header-title {
+        font-size: 4rem;
+        margin-top: 5px;
+    }
+}
+/* Header main section style end */
 /* Header section style end here */
