@@ -166,3 +166,72 @@ header nav .logo {
 }
 /* Header main section style end */
 /* Header section style end here */
+
+/* About me section start from here */
+main {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.about-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.about-me .about-me-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .about-me-img .about-me-image {
+    width: 70%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.about-me .about-me-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-me-info .about-me-title {
+    color: #363958;
+    font-family: Bebas Neue;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 25px;
+}
+
+.about-me-info .about-me-description {
+    color: #3e3e3e;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 576px) {
+    .about-me {
+        flex-direction: column;
+        height: max-content;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .about-me .about-me-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .about-me .about-me-info {
+        width: 100%;
+    }
+}
+/* About me section end here */
