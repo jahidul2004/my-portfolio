@@ -235,3 +235,88 @@ main {
     }
 }
 /* About me section end here */
+
+/* Project section start from here */
+.projects {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.projects .projects-info {
+    width: 50%;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects .projects-info .projects-title {
+    font-family: Bebas Neue;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #363958;
+}
+
+.projects .projects-info .projects-title span {
+    color: #f46060;
+}
+
+.projects .project-area {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects .project-area .project {
+    width: 30%;
+    height: 60vh;
+    box-shadow: 0px 6.58px 19.74px 0px #0000002d;
+    border-radius: 20px;
+}
+.projects .project-area .project .project-img {
+    height: 60%;
+    width: 100%;
+}
+
+.projects .project .project-title {
+    color: #363958;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.projects .project .project-description {
+    color: #6c6c6c;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.projects .project .project-info {
+    padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .projects {
+        margin-top: 80px;
+    }
+    .projects .project-area {
+        flex-direction: column;
+    }
+    .projects .projects-info {
+        width: 100%;
+        text-align: left;
+    }
+    .projects .project-area .project {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+/* Project section end here */
