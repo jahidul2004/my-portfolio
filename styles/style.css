@@ -306,6 +306,7 @@ main {
 @media screen and (max-width: 576px) {
     .projects {
         margin-top: 80px;
+        height: max-content;
     }
     .projects .project-area {
         flex-direction: column;
@@ -320,3 +321,37 @@ main {
     }
 }
 /* Project section end here */
+
+/* Enquiry section start from here */
+.enquiry {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 40px;
+}
+
+.enquiry .enquiry-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background: linear-gradient(133.39deg, #5d69e9 -9.623%, #4225b6 99.867%);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.enquiry .enquiry-container .enquiry-title {
+    color: #ffffff;
+    font-family: Bebas Neue;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+    .enquiry .enquiry-container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Work enquiry section end here */
